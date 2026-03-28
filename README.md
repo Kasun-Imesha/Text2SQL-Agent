@@ -29,7 +29,7 @@ The system uses multiple specialized AI agents working together:
 
 1. **Clone or download the project**
    ```bash
-   cd DB-Retriever-Agent
+   cd Text2SQL-Agent
    ```
 
 2. **Create a virtual environment (recommended)**
@@ -89,7 +89,7 @@ The app will open in your browser at `http://localhost:8501`
 ## Project Structure
 
 ```
-DB-Retriever-Agent/
+Text2SQL-Agent/
 ├── app.py                 # Main Streamlit web app
 ├── agent_group.py         # Test Agent orchestration logic
 ├── prompts.py             # Agent system prompts
