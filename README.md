@@ -2,6 +2,8 @@
 
 A multi-agent system that converts natural language queries into SQL and executes them against a database, displaying results with visualizations.
 
+![ui](./images/text2sql_agent_ui2.png)
+
 ## What is This?
 
 This project implements an intelligent database assistant that:
