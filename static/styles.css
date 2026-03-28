@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;700;800&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'DM Mono', monospace;
+    background-color: #090912;
+    color: #e2ddd4;
+}
+#MainMenu, footer, header { visibility: hidden; }
+.block-container { padding: 2.5rem 3rem 5rem; max-width: 1000px; }
+
+.hero { text-align: center; padding: 3rem 0 1.5rem; }
+.hero h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 3.6rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    background: linear-gradient(130deg, #e2ddd4 30%, #f0a05a 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0; line-height: 1;
+}
+.hero .sub {
+    font-size: 0.73rem;
+    color: #5a5650;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+}
+
+hr.div { border: none; border-top: 1px solid #1c1c28; margin: 1.4rem 0; }
+
+.stTextArea textarea {
+    background: #0e0e1a !important;
+    border: 1px solid #25253a !important;
+    border-radius: 4px !important;
+    color: #e2ddd4 !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.95rem !important;
+    resize: none !important;
+    transition: border-color 0.2s;
+}
+.stTextArea textarea:focus {
+    border-color: #f0a05a !important;
+    box-shadow: 0 0 0 2px rgba(240,160,90,0.1) !important;
+}
+
+.stButton > button {
+    background: #f0a05a !important;
+    color: #090912 !important;
+    font-family: 'Syne', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 0.82rem !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    border: none !important;
+    border-radius: 3px !important;
+    padding: 0.6rem 2rem !important;
+    transition: background 0.15s, transform 0.1s;
+}
+.stButton > button:hover { background: #f5b97a !important; transform: translateY(-1px); }
+.stButton > button:active { transform: translateY(0); }
+
+.result-header {
+    display: flex; align-items: center; gap: 0.75rem; margin: 1.2rem 0 0.8rem;
+}
+.result-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.1rem; font-weight: 700; color: #e2ddd4;
+}
+.badge-done {
+    font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase;
+    color: #4ade80; border: 1px solid rgba(74,222,128,0.35);
+    padding: 0.18rem 0.55rem; border-radius: 2px;
+}
+.badge-run {
+    font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase;
+    color: #f0a05a; border: 1px solid rgba(240,160,90,0.35);
+    padding: 0.18rem 0.55rem; border-radius: 2px;
+    animation: pulse 1.4s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
+
+.err-block {
+    background: #130a0a; border-left: 3px solid #f87171;
+    padding: 0.8rem 1.1rem; border-radius: 0 4px 4px 0;
+    font-size: 0.85rem; color: #f87171; margin: 0.8rem 0;
+}
+.ex-label {
+    font-size: 0.63rem; letter-spacing: 0.16em; text-transform: uppercase;
+    color: #3e3d48; margin-bottom: 0.4rem;
+}
+[data-testid="stDataFrame"] { border: 1px solid #1c1c28 !important; border-radius: 4px !important; }
